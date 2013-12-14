@@ -2,11 +2,10 @@
 #
   module Mongoid
     class GridFS
-      const_set :Version, '1.9.0'
 
       class << GridFS
         def version
-          const_get :Version
+          const_get :VERSION
         end
 
         def dependencies
